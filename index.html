@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Profecional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="contenedor">
+        <h1>Perfil de Alexander Cruz</h1>
+        <p>Perfil-2026</p>
+    </div>
+</header>
+
+<nav>
+    <div class="contenedor">
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">sobre</a></li>
+            <li><a href="#habilidades">habilidades</a></li>
+            <li><a href="#proyectos">proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="inicio" class="seccion banner">
+    <div class="contenedor">
+        <h2>Bienvenido a mi proyecto web</h2>
+        <p>En esta página presento lo aprendido en la materia de informática.</p>
+    </div>
+</section>
+
+<section id="perfil" class="seccion">
+    <div class="contenedor perfil-contenido">
+        <img src="yo7.jpg" alt="Foto de perfil">
+        <div>
+            <h2>Juan Pérez</h2>
+            <p>Estudiante de Informática</p>
+            <p>Interesado en desarrollo web, redes y tecnología.</p>
+        </div>
+    </div>
+</section>
+
+<section id="aprendizaje" class="seccion fondo">
+    <div class="contenedor">
+        <h2>Lo que he aprendido</h2>
+        <div class="columnas">
+            <article class="caja">
+                <h3>💻 HTML</h3>
+                <p>Aprendí a estructurar páginas web, usar etiquetas semánticas y organizar contenido de manera clara.</p>
+            </article>
+            <article class="caja">
+                <h3>🎨 CSS</h3>
+                <p>Aplicación de estilos, colores, diseño responsivo y animaciones básicas para mejorar la apariencia web.</p>
+            </article>
+            <article class="caja">
+                <h3>🌐 Redes</h3>
+                <p>Conceptos de conexión, protocolos, comunicación entre dispositivos y seguridad básica de redes.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="habilidades" class="seccion">
+    <div class="contenedor">
+        <h2>Mis Habilidades</h2>
+
+        <div class="habilidades-circulos">
+
+            <div class="circulo-habilidad">
+                <div class="circle html">
+                    <span>90%</span>
+                </div>
+                <p>HTML</p>
+            </div>
+
+            <div class="circulo-habilidad">
+                <div class="circle css">
+                    <span>80%</span>
+                </div>
+                <p>CSS</p>
+            </div>
+
+            <div class="circulo-habilidad">
+                <div class="circle redes">
+                    <span>70%</span>
+                </div>
+                <p>Redes</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+.habilidades-circulos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.circulo-habilidad {
+    text-align: center;
+}
+
+.circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    background: conic-gradient(#ddd 0% 100%);
+}
+
+/* Colores y porcentaje de cada habilidad */
+.circle.html {
+    background: conic-gradient(#f16529 0% 90%, #ddd 90% 100%);
+}
+
+.circle.css {
+    background: conic-gradient(#2965f1 0% 80%, #ddd 80% 100%);
+}
+
+.circle.redes {
+    background: conic-gradient(#4caf50 0% 70%, #ddd 70% 100%);
+}
+
+.circle span {
+    position: absolute;
+}
+</style>
+
+    </div>
+</section>
+
+<section id="contacto" class="seccion fondo">
+    <div class="contenedor">
+        <h2>Contacto</h2>
+
+        <div class="contacto-grid">
+
+            <form class="formulario">
+                <label>Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre">
+
+                <label>Correo</label>
+                <input type="email" placeholder="Escribe tu correo">
+
+                <label>Mensaje</label>
+                <textarea placeholder="Escribe tu mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="info-contacto">
+                <h3>Información</h3>
+                <p><strong>Curso:</strong> 12btp</p>
+                <p><strong>Institución:</strong> IPC</p>
+                <p><strong>Ubicación:</strong> comayagua</p>
+
+                <h3>Redes Académicas</h3>
+                <ul>
+                    <li>Correo: Nain@email.com</li>
+                    <li>GitHub: github.com/juan</li>
+                    <li>Teléfono: 000-000-000</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-final">
+    <div class="contenedor footer-grid">
+        <div>
+            <h4>Proyecto</h4>
+            <p>Página desarrollada como práctica de HTML y CSS.</p>
+        </div>
+
+        <div>
+            <h4>Materia</h4>
+            <p> Desarrollo Web</p>
+            <p>Año 2026</p>
+        </div>
+
+        <div>
+            <h4>Autor</h4>
+            <p>Alexander Cruz</p>
+            <p>Estudiante</p>
+        </div>
+    </div>
+
+    <div class="copy">
+        <p>© 2026 - Todos los derechos reservados</p>
+    </div>
+</footer>

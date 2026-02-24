@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background-color: #1f3c88;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    background-color: #162a5c;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+/* SECCIONES */
+.seccion {
+    padding: 40px 0;
+}
+
+.banner {
+    background-color: #dbe4ff;
+    text-align: center;
+}
+
+.fondo {
+    background-color: #ffffff;
+}
+
+/* PERFIL */
+.perfil-contenido {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.perfil-contenido img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #1f3c88;
+}
+
+/* COLUMNAS */
+.columnas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    transition: transform 0.3s;
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+}
+/* Contenedor de todos los círculos */
+.habilidades-circulos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Cada círculo individual y su etiqueta */
+.circulo-habilidad {
+    text-align: center;
+}
+
+/* Círculo de progreso */
+.circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    background: conic-gradient(#ddd 0% 100%);
+    animation: llenar 2s ease-out forwards;
+}
+
+/* Colores y porcentaje de cada habilidad */
+.circle.html {
+    background: conic-gradient(#f16529 0% 0%, #ddd 0% 100%);
+    --porcentaje: 90%;
+}
+
+.circle.css {
+    background: conic-gradient(#2965f1 0% 0%, #ddd 0% 100%);
+    --porcentaje: 80%;
+}
+
+.circle.redes {
+    background: conic-gradient(#4caf50 0% 0%, #ddd 0% 100%);
+    --porcentaje: 70%;
+}
+
+/* Número dentro del círculo */
+.circle span {
+    position: absolute;
+}
+
+/* Animación para llenar el círculo */
+@keyframes llenar {
+    from {
+        background: conic-gradient(#ddd 0% 100%);
+    }
+    to {
+        background: conic-gradient(#f16529 0% 90%, #ddd 90% 100%);
+    }
+}
+
+/* Ajuste de cada color individual */
+.circle.html { animation-name: llenar-html; }
+.circle.css { animation-name: llenar-css; }
+.circle.redes { animation-name: llenar-redes; }
+
+@keyframes llenar-html {
+    from { background: conic-gradient(#ddd 0% 100%); }
+    to { background: conic-gradient(#f16529 0% 90%, #ddd 90% 100%); }
+}
+
+@keyframes llenar-css {
+    from { background: conic-gradient(#ddd 0% 100%); }
+    to { background: conic-gradient(#2965f1 0% 80%, #ddd 80% 100%); }
+}
+
+@keyframes llenar-redes {
+    from { background: conic-gradient(#ddd 0% 100%); }
+    to { background: conic-gradient(#4caf50 0% 70%, #ddd 70% 100%); }
+}
+/* FORMULARIO */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+button {
+    padding: 10px;
+    background-color: #1f3c88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #162a5c;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+/* CONTACTO GRID */
+.contacto-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.info-contacto {
+    width: 300px;
+}
+
+.info-contacto ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.info-contacto li {
+    margin-bottom: 5px;
+}
+
+/* FOOTER NUEVO */
+.footer-final {
+    background-color: #0e1c3a;
+    color: white;
+    padding-top: 30px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-grid div {
+    width: 250px;
+}
+
+.footer-final h4 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff50;
+    padding-bottom: 5px;
+}
+
+.copy {
+    text-align: center;
+    background-color: #091226;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
